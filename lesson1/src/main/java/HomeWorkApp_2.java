@@ -1,6 +1,6 @@
 // Second Task GeekBrains
 
-public class HomeWorkApp_2 extends Exception{
+public class HomeWorkApp_2{
 
     public static boolean checkSumm(int a, int b){
         if (a + b >= 10 && a + b <= 20){
