@@ -1,18 +1,8 @@
+// First task GeekBrains
+// Fix errors by Александро Гладковым
 import java.util.Scanner;
 
-// Первое задание GeekBrains
-// Исправление ошибок указанных Александро Гладковым
-
-public class HomeWorkApp {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        printThreeWords();
-        checkSumSign(scanner);
-        printColor(scanner);
-        compareNumbers(scanner);
-        scanner.close();
-    }
+public class HomeWorkApp_1{
 
     public static void printThreeWords() {
 
