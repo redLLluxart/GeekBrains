@@ -1,7 +1,9 @@
 // Second Task GeekBrains
 
 public class HomeWorkApp_2{
-
+    public static void main(String[] args) {
+        System.out.println(checkSign_bool(0));
+    }
     public static boolean checkSumm(int a, int b){
         if (a + b >= 10 && a + b <= 20){
             return true;
@@ -21,12 +23,13 @@ public class HomeWorkApp_2{
     }
 
     public static boolean checkSign_bool(int a){
-        if (a >= 0){
+        return a>= 0;
+        /*if (a >= 0){
             return false;
         }
         else{
             return true;
-        }
+        }*/
     }
 
     public static void repeat(int a, String str){
