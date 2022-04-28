@@ -13,20 +13,20 @@ public class Employee {
     private int age;
 
     public Employee(){
-       /* String[] mas_name = {"Pavel", "Egor", "Slava", "Vlad", "Alexander"};
+        String[] mas_name = {"Pavel", "Egor", "Slava", "Vlad", "Alexander"};
         String[] mas_lastname = {"Petrovich","Andreevich","Alekseevich","Romanovich","Georgievich"};
         String[] mas_surname = {"Eroxin","Pavlov","Sin","Lutak","Kondakov"};
         String[] mas_position = {"junior","middle","senior","trainee","team lead"};
         String[] mas_email = {"axd@gmail.com","jgh@yandex.com","jld@mail.ru","sdf@yahoo.ru","sfdg@protonmail.com"};
-        String[] mas_phoneNumber = {"8985451321","89538912961","89930123954","89537910278","89537963094"};*/
-        name = "Pavel";
-        lastname = "Kulyamin";
-        surname = "Andreevich";
-        position = "Java Developer";
-        email = "pavel.kulyamin@open.ru";
-        phoneNumber = "89057630065";
-        salary = 150000;
-        age = 24;
+        String[] mas_phoneNumber = {"8985451321","89538912961","89930123954","89537910278","89537963094"};
+        name = randomString(mas_name);
+        lastname = randomString(mas_lastname);
+        surname = randomString(mas_surname);
+        position = randomString(mas_position);
+        email = randomString(mas_email);
+        phoneNumber = randomString(mas_phoneNumber);
+        salary = randomInt(99999);
+        age = randomInt(100);
     }
 
     public Employee(String name, String lastname, String surname, String position, String email,String phoneNumber, int salary, int age){
@@ -48,6 +48,14 @@ public class Employee {
         System.out.println("Age: " + age);
     }
 
+    private int randomInt(int max){
+        return (int) (Math.random()*++max);
+    }
+
+    private String randomString(String[] array){
+        int randomValue = (int)Math.floor(Math.random()*array.length);
+        return array[randomValue];
+    }
     public int getAge() {
         return age;
     }

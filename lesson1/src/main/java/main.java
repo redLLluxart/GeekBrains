@@ -15,7 +15,6 @@ public class main {
         System.out.println("#################################");
         for(int i = 0; i < office.length; i++){
             office[i] = new Employee();
-            office[i].setAge((int) ( Math.random() * 100 ));
             if (office[i].getAge() > 40){
                 office[i].showData();
                 System.out.println("#################################");
