@@ -1,11 +1,25 @@
 // main HomeWorkApp
+package lesson_5;
 
-public class main extends HomeWorkApp_2 {
+import java.util.Random;
+
+public class main {
+
     public static void main(String[] args) {
-       System.out.println(checkSumm(2,11));
-       checkSign_Str(-5);
-       System.out.println(checkSign_bool(4));
-       repeat(5,"Hello world!");
-       System.out.println(checkYear(3195100));
+        Employee Employe1 = new Employee();
+        Employe1.showData();
+        System.out.println("#################################");
+        Employee Employe2 = new Employee("1","2","3","4","5","6",1,5);
+        Employe2.showData();
+        Employee[] office = new Employee[5];
+        System.out.println("#################################");
+        for(int i = 0; i < office.length; i++){
+            office[i] = new Employee();
+            if (office[i].getAge() > 40){
+                office[i].showData();
+                System.out.println("#################################");
+            }
+        }
+
     }
 }
